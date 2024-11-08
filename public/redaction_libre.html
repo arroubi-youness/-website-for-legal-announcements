@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+
+
+    <style>
+        #object_social::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+     
+</head>
+
+<body class="bg-[#f8f4f4] overflow-x-hidden">
+    <div class="  w-full h-[60px] bg-[#4094bc]  z-10  fixed">
+        <div>
+            <h1 class="text-white text-2xl font-bold mt-3   ml-[3%] "><a href="./home.html"><i class='bx bx-home-alt-2'></i>Annonce</a>
+            </h1>
+        </div>
+        <div class="absolute left-[42%] top-4 text-white text-lg font-normal">
+            <div class="yup flex gap-[20px] font-normal ">
+                <a href="#" class="" id="annonce"> <span class="relative top-1"><i
+                            class='bx bxs-megaphone text-2xl   '></i></span> Annonces Légales</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-bookmark-alt text-2xl '></i></span>
+                    Actualités</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-info-circle text-2xl mr-1'></i></span>infos
+                    Pratiques</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-up-arrow-circle   text-2xl mr-1'></i></span>
+                    Fonctionnalités</a>
+            </div>
+            <div id="detail"
+                class=" hidden absolute top-[45px] left-3 w-[160px] h-[160px] bg-[#4094bc] rounded-md  flex flex-col text-white"
+                style="line-height: 1;">
+                <div id="publiez"
+                    class="w-full h-1/3 flex   justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-2"> Publiez une annonce légale</p>
+                </div>
+                <div id="pubs"
+                    class="w-full h-1/3 flex  justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-1">Annonces publiées</p>
+
+                </div>
+                <div id="journal" class="w-full h-1/3 flex   justify-center items-center  cursor-pointer">
+
+                    <p class="ml-2">Le journal des annonces légales</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="absolute left-[91%] top-[10px]  text-white ">
+            <button class="bg-transparent border-2 border-white    rounded-xl px-4 py-[6px]  ">Profil</button>
+        </div>
+    </div>
+    <div class="  relative w-full overflow-x-hidden">
+        <div class="mt-24   w-full    ">
+            <div class="ml-20 bg-white w-fit p-4">
+                <h1 class="font-bold text-xl text-[#dc7c3f]">Annonce légale - Rédaction libre d'annonce légale
+
+
+
+                </h1>
+
+                <p>Ce modèle d'annonce légale en ligne vous permet de publier une Annonce légale -<br> Rédaction libre d'annonce légale dans un journal d'annonces légales habilité.</p>
+            </div>
+            <div class="w-[88%]  mt-7  mx-auto">
+                <div class="bg-white  w-full">
+                    <h1 class="text-[#dc7c3f] text-xl font-bold  mt-2 text-center "><i
+                            class='bx bx-edit text-3xl mr-1 relative top-[6px]'></i>Saisie des informations</h1>
+
+                    <div class="w-full mt-3">
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-2 text-[#4094bc] ">Notice rédaction libre
+
+
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+                        <p class="text-base font-normal ml-20 mt-3 text-black"><i class='bx bxs-right-arrow relative top-[3px]   text-[#dc7c3f]'></i> Pour être recevable, l’annonce légale doit comporter les mentions obligatoires présentes dans les statuts ou le PV d’Assemblée Générale. A défaut, elle pourra être rejetée par le Greffe du Tribunal de Commerce.
+
+                             
+                        </p>
+                        
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="bg-white  w-full">
+
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Type de votre annonce
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[62px]    font-normal text-gray-900 dark:text-white">Nom de société</label>
+                            <input type="text" id="nom_societe_libre" name="nom_societe_libre"
+                                class="bg-gray-50 md:ml-7  border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  placeholder-text-sm placeholder-gray-400"
+                                placeholder="    Veuillez entrer la dénomination ou le nom de l'entité" required>
+
+                            </input>
+                        </div>
+                        
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label class="block mb-2 md:mb-0  mr-[61px]    font-normal text-gray-900 dark:text-white">Type d'annonce</label>
+                            <select id="type_annonce_libre" name="type_annonce_libre"
+                            class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                            required>
+
+
+                            <option class=" " value="" disabled selected>choisir la forme sociale</option>
+                            <optgroup label="Constitution de société">
+                                <option   value="1" >Constitution : SARL, SARLAU, SNC, SCS, SCA</option>
+                                <option   value="2" >Constitution : Société Anonyme Simplifiée (SAS)</option>
+                                <option   value="3" >Constitution : Société Anonyme (SA)</option>
+                                <option   value="4" >Constitution : Groupement d'Intérêt Économique (GIE)</option>
+                                </optgroup>
+                                <optgroup label="Cessation d'activité">
+                                    <option    value="14" >Dissolution</option>
+                                    <option    value="16" >Clôture de la liquidation</option>
+                                    <option    value="18" >Continuité de l'activité</option>
+                                </optgroup>
+                                <optgroup label="Modification de société">
+                                    <option     value="5" >Changement de dirigeant</option>
+                                    <option     value="6" >Transfert de siège social</option>
+                                    <option     value="7" >Changement d'objet social</option>
+                                    <option     value="8" >Changement de dénomination</option>
+                                    <option     value="9" >Transformation de la forme sociale</option>
+                                    <option     value="10" >Cession de parts sociales</option>
+                                    <option     value="11" >Réduction de capital</option>
+                                    <option     value="12" >Augmentation de capital</option>
+                                </optgroup>
+                                <optgroup label="Autres annonces légales">
+                                        <option      value="20" >Cession de fonds de commerce</option>
+                                        <option      value="21" >Conclusion du contrat de location gérance</option>
+                                        <option      value="22" >Résiliation du contrat de location gérance</option>
+                                        <option      value="23" >Création de succursale</option>
+                                        <option      value="24" >Fusion - Scission</option>
+                                     <option      value="999" >Autre</option>
+                                </optgroup>
+                             </select>
+                        </div>
+                      
+
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+
+
+
+        
+
+               
+               
+                <div class="bg-white  w-full">
+
+
+                    <div id="annonce_libre" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Texte de votre annonce
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <h2 class="text-base font-medium ml-20 mt-3 text-[#dc7c3f]"><i class='bx bxs-right-arrow relative top-[3px]'></i>Rédaction Libre : saisir ou "Copier-Coller" le texte de votre annonce dans le cadre ci-dessous.
+
+                        </h2>
+                        
+   <div  class="w-11/12 mx-auto mt-3 h-screen relative mb-4">
+                        <div id="editor"    class="  mx-auto ">
+                            <textarea name="text_libre" id="text_libre" hidden></textarea>
+
+                          </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="confirm"
+                        class="w-10/12 mx-auto   md:w-[33%] relative  mt-16   h-12 flex  cursor-pointer   rounded-lg bg-transparent">
+
+                        <div
+                            class="w-5/6 flex justify-center  items-center bg-[#4094bc] hover:scale-105   text-white font-medium   rounded-lg  ">
+                            Confirmer les informations de l'annonce</div>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="relative w-[98%] h-[900px] md:mx-auto ml-14 md:h-[300px] bg-white  mt-20 mb-3  rounded-lg ">
+
+
+        <div class="  absolute mt-10 ml-[50px] md:mt-32 md:ml-9  text-black">
+            <div class="ml-3">
+                <p class="text-4xl font-semibold ">Follow us</p>
+            </div>
+            <div class="  ml-7 text-2xl mt-2">
+                <p><i class='bx bxl-facebook-square'></i> <a
+                        href="https://www.linkedin.com/company/wehelpgroup/posts/?feedView=all"><i
+                            class='bx bxl-linkedin-square'></i> </a> <i class='bx bxl-instagram'></i> <a
+                        href="https://wehelp.ma/"><i class='bx bx-world'></i></a></p>
+            </div>
+        </div>
+        <div class="absolute mt-44 left-20 md:mt-24 w-full">
+            <div class=" flex flex-col gap-8 md:flex md:flex-row md:justify-center md:gap-24 text-lg">
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class="">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class="">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Feedback </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black ">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      const quill = new Quill('#editor', {
+        theme: 'snow'
+      });
+    </script>
+    <script>
+
+document.querySelector('form').onsubmit = function() {
+            var content = quill.root.innerHTML;
+            document.querySelector('#text_libre').value = content;
+        };
+        const apiUrl = "./cities.json";
+        const selectElement = document.querySelectorAll(".ville_class");
+
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                const cities = data.cities.data;
+
+                cities.forEach((city, cityIndex) => {
+                    for(let i=0;i<selectElement.length;i++){
+                        const option = document.createElement("option");
+                        option.value = cityIndex;
+                        option.textContent = city.names.fr;
+                        selectElement[i].appendChild(option);
+                     }
+                    
+                });
+            })
+            .catch((error) => {
+                console.error("Error fetching cities:", error);
+            });
+
+
+     
+    </script>
+</body>
+
+</html>

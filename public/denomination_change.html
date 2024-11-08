@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        #object_social::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f8f4f4] overflow-x-hidden">
+    <div class="  w-full h-[60px] bg-[#4094bc]  z-10  fixed">
+        <div>
+            <h1 class="text-white text-2xl font-bold mt-3   ml-[3%] "><a href="./home.html"><i class='bx bx-home-alt-2'></i>Annonce</a>
+            </h1>
+        </div>
+        <div class="absolute left-[42%] top-4 text-white text-lg font-normal">
+            <div class="yup flex gap-[20px] font-normal ">
+                <a href="#" class="" id="annonce"> <span class="relative top-1"><i
+                            class='bx bxs-megaphone text-2xl   '></i></span> Annonces Légales</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-bookmark-alt text-2xl '></i></span>
+                    Actualités</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-info-circle text-2xl mr-1'></i></span>infos
+                    Pratiques</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-up-arrow-circle   text-2xl mr-1'></i></span>
+                    Fonctionnalités</a>
+            </div>
+            <div id="detail"
+                class=" hidden absolute top-[45px] left-3 w-[160px] h-[160px] bg-[#4094bc] rounded-md  flex flex-col text-white"
+                style="line-height: 1;">
+                <div id="publiez"
+                    class="w-full h-1/3 flex   justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-2"> Publiez une annonce légale</p>
+                </div>
+                <div id="pubs"
+                    class="w-full h-1/3 flex  justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-1">Annonces publiées</p>
+
+                </div>
+                <div id="journal" class="w-full h-1/3 flex   justify-center items-center  cursor-pointer">
+
+                    <p class="ml-2">Le journal des annonces légales</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="absolute left-[91%] top-[10px]  text-white ">
+            <button class="bg-transparent border-2 border-white    rounded-xl px-4 py-[6px]  ">Profil</button>
+        </div>
+    </div>
+    <div class="  relative w-full overflow-x-hidden">
+        <div class="mt-24   w-full    ">
+            <div class="ml-20 bg-white w-fit p-4">
+                <h1 class="font-bold text-xl text-[#dc7c3f]">Annonce légale - Changement de dénomination
+
+
+                </h1>
+
+                <p>Ce modèle d'annonce légale en ligne vous permet de publier une Annonce légale -<br> Changement de dénomination dans un journal d'annonces légales habilité.
+                </p>
+            </div>
+            <div class="w-[88%]  mt-7  mx-auto">
+                <div class="bg-white  w-full">
+                    <h1 class="text-[#dc7c3f] text-xl font-bold  mt-2 text-center "><i
+                            class='bx bx-edit text-3xl mr-1 relative top-[6px]'></i>Saisie des informations</h1>
+
+                    <div class="w-full mt-3">
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-2 text-[#4094bc] ">La décision
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label for="organe_decision_ch_de"
+                                class="block mb-2 md:mb-0  mr-[45px]    font-normal text-gray-900 dark:text-white">Organe
+                                de décision</label>
+                            <select id="organe_decision_ch_de" name="organe_decision_ch_de"
+                                class="bg-gray-50 placeholder-gray-400  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[35%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir l'organe de décision</option>
+
+                                <option value="1">
+                                    Conseil d'administration
+                                </option>
+                                <option value="2">
+                                    Assemblée générale ordinaire
+                                </option>
+                                <option value="3">
+                                    Assemblée générale extraordinaire
+                                </option>
+                                <option value="4">
+                                    Associé unique
+                                </option>
+                                <option value="5">
+                                    Gérance
+                                </option>
+                                <option value="6">
+                                    Liquidateur
+                                </option>
+                                <option value="7">
+                                    Autre
+                                </option>
+
+                            </select>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label class="block mb-2 md:mb-0   mr-16    font-normal text-gray-900 dark:text-white">Date
+                                de décision</label>
+                            <input type="date" id="date_decision_ch_de" name="date_decision_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[35%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required />
+                        </div>
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="bg-white  w-full">
+
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">La société</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[62px]    font-normal text-gray-900 dark:text-white">Dénomination</label>
+                            <input type="text" id="denomination_ch_de" name="denomination_ch_de"
+                                class="bg-gray-50 md:ml-7  border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  placeholder-text-sm placeholder-gray-400"
+                                placeholder="    Veuillez entrer la dénomination ou le nom de l'entité" required>
+
+                            </input>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[128px]   font-normal text-gray-900 dark:text-white">Sigle</label>
+                            <input type="text" id="Sigle_ch_de" name="Sigle_ch_de"
+                                class="bg-gray-50 border md:ml-7  placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[20%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer le sigle" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label class="block mb-2 md:mb-0  mr-16    font-normal text-gray-900 dark:text-white">Forme
+                                sociale</label>
+                            <select id="forme_ch_de" name="forme_ch_de"
+                                class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir la forme sociale</option>
+
+
+
+
+
+                                <option value="7">Société Anonyme
+                                    (SA)</option>
+                                <option value="100">Société Anonyme à Directoire
+                                    (SAD)</option>
+                                <option value="101">Société Anonyme à Conseil
+                                    (SAC)</option>
+                                <option value="6">Société Anonyme Simplifiée
+                                    (SAS)</option>
+                                <option value="1">Société à Responsabilité Limitée
+                                    (SARL)</option>
+                                <option value="2">Société à Responsabilité Limitée à Associé Unique
+                                    (SARLAU)</option>
+                                <option value="3">Société en Commandite Simple
+                                    (SCS)</option>
+                                <option value="4">Société en Commandite par Action
+                                    (SCA)</option>
+                                <option value="10">Société Civile
+                                    (SC)</option>
+                                <option value="11">Société Civile Immobilière
+                                    (SCI)</option>
+                                <option value="12">Société Civile Professionnelle
+                                    (SCP)</option>
+                                <option value="5">Société en Nom Collectif
+                                    (SNC)</option>
+                                <option value="14">Société de Participation
+                                    (SP)</option>
+                                <option value="15">Société d'Investissement à Capital Variable
+                                    (SICAV)</option>
+                                <option value="16">Fonds Commun de Placement
+                                    (FCP)</option>
+                                <option value="8">Groupement d'Intérêt Economique
+                                    (GIE)</option>
+                                <option value="19">Succursale
+                                    (SUCC)</option>
+                                <option value="20">Agence
+                                    (AGENCE)</option>
+                                <option value="21">Entreprise Individuel
+                                    (PP)</option>
+                                <option value="22">Coopérative
+                                    (COOP)</option>
+                                <option value="23">Entreprise Public
+                                    (PUBLIC)</option>
+                                <option value="24">Office
+                                    (OFFICE)</option>
+                                <option value="25">Autre Forme Juridique
+                                    (AUTRE)</option>
+                                <option value="26">Société par Action
+                                    (SPA)</option>
+                                <option value="27">Groupement
+                                    (GRP)</option>
+                                <option value="28">Société Unipersonnelle à Responsabilité Limité
+                                    (SUARL)</option>
+                                <option value="29">Entreprise Public Economique
+                                    (EPE)</option>
+                                <option value="30">Entreprise Public Industrielle Et Commerciale
+                                    (EPIC)</option>
+                                <option value="31">Entreprise Publique Locale
+                                    (EPL)</option>
+                                <option value="32">Entreprise Unipersonnelle Sportive à Responsabilite Limitee
+                                    (EUSRL)</option>
+                                <option value="33">Representation Commercial
+                                    (RCOM)</option>
+                                <option value="34">Societe Sportive à Responsabilite Limite
+                                    (SRL)</option>
+                                <option value="35">Societe Sportive Par Actions
+                                    (SSPA)</option>
+                                <option value="36">Société Mutuelle de Services Agricoles
+                                    (SMSA)</option>
+                                <option value="37">Établissement Public à caractère Non Administratif
+                                    (EPNA)</option>
+                                <option value="38">Groupement d'Intérêt Economique Commercial
+                                    (GIECOM)</option>
+                                <option value="39">Groupement d'Intérêt Economique Civil
+                                    (GIECIV)</option>
+                                <option value="40">Société Professionnelle
+                                    (SPROF)</option>
+                                <option value="41">Société Civile Non Commerciale
+                                    (SCNC)</option>
+                                <option value="42">Société à Capital Variable
+                                    (SCV)</option>
+                                <option value="43">Société de Personnes
+                                    (SPERSO)</option>
+                                <option value="44">Centre d’Affaire
+                                    (CA)</option>
+                                <option value="45">Nom Regroupé
+                                    (NR)</option>
+                                <option value="46">Société de Fait
+                                    (SF)</option>
+                                <option value="47">Établissement Stable
+                                    (ES)</option>
+                                <option value="48">Indéterminée
+                                    (INDETERMIN)</option>
+                                <option value="49">SOCIETE PAR ACTIONS SIMPLIFIEE D'ASSOCIE UNIQUE
+                                    (SASAU)</option>
+                                <option value="50">SOCIETE PAR ACTIONS SIMPLIFIEE
+                                    (SPAS)</option>
+                                <option value="51">SOCIETE CITOYENNE LOCALE
+                                    (SCL)</option>
+                                <option value="52">Fonds de placement collectif en capital
+                                    (FPCC)</option>
+                                <option value="53">Société d'assurance mutuelle
+                                    (SAM)</option>
+                                <option value="54">Mutuelle
+                                    (MUT)</option>
+
+                            </select>
+                        </div>
+
+                      
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label  
+                                class="block mb-2 md:mb-0   mr-[75px]   font-normal text-gray-900 dark:text-white">Capital
+                                (DH)</label>
+                            <input type="number" id="capital_ch_de" name="capital_ch_de"
+                                class="bg-gray-50 border placeholder-gray-400  md:ml-7 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]   "
+                                placeholder="   Ecrire le capital" required />
+                        </div>
+
+                      
+                     
+                    
+
+
+
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+
+                <div class="bg-white  w-full">
+
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Adresse du siège social
+
+
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label  
+                                class="block mb-2 md:mb-0   mr-24   font-normal text-gray-900 dark:text-white">Adresse</label>
+                            <input type="text" id="adresse_ch_de" name="adresse_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire l'adresse" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label  
+                                class="block mb-2 md:mb-0   mr-[68px]    font-normal text-gray-900 dark:text-white">Code
+                                postal</label>
+                            <input type="text" id="code_postal_ch_de" name="code_postal_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[25%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le  code" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label 
+                                class="block mb-2 md:mb-0  mr-[120px]    font-normal text-gray-900 dark:text-white">Ville</label>
+                            <select id="ville_ch_de" name="ville_ch_de"
+                                class="bg-gray-50 placeholder-gray-400 ville_class  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option value="" disabled selected>choisir la ville</option>
+
+
+
+                            </select>
+                        </div>
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+               
+
+
+               
+                <div class="bg-white  w-full">
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Nouvelle dénomination
+
+
+
+
+
+
+
+                        </h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                    <div
+                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                    <label  
+                        class="block mb-2 md:mb-0   mr-[20px] leading-5 font-normal text-gray-900 dark:text-white">Dénomination</label>
+                    <input id="object_social_resume_ch_de" name="object_social_resume_ch_de"
+                        class="bg-gray-50 border md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                        required placeholder="    Veuillez entrer la Résumé"></input>
+                </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+                </div>
+                <div class="bg-white  w-full">
+
+
+                    <div id="Depot_ch_ob" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Dépôt légal</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[93px]   font-normal text-gray-900 dark:text-white">Tribunal</label>
+                            <select id="Tribunal_ch_de" name="Tribunal_ch_de"
+                                class="bg-gray-50   placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir Tribunal
+
+                                </option>
+                                <option value="1" >AGADIR (Tribunal de Commerce)</option>
+			<option value="2" >ALHOCEIMA (Tribunal de 1ère Instance)</option>
+			<option value="64" >ASILAH (Tribunal de 1ère Instance)</option>
+			<option value="3" >AZILAL (Tribunal de 1ère Instance)</option>
+			<option value="66" >AZROU (Tribunal de 1ère Instance)</option>
+			<option value="4" >BEN AHMED (Tribunal de 1ère Instance)</option>
+			<option value="5" >BENGUERIR (Tribunal de 1ère Instance)</option>
+			<option value="6" >BENI MELLAL (Tribunal de 1ère Instance)</option>
+			<option value="7" >BEN SLIMANE (Tribunal de 1ère Instance)</option>
+			<option value="8" >BERKANE (Tribunal de 1ère Instance)</option>
+			<option value="9" >BERRECHID (Tribunal de 1ère Instance)</option>
+			<option value="10" >BOUARFA (Tribunal de 1ère Instance)</option>
+			<option value="63" >BOUJAAD (Tribunal de 1ère Instance)</option>
+			<option value="11" >BOULMANE (Tribunal de 1ère Instance)</option>
+			<option value="12" >CASABLANCA (Tribunal de Commerce)</option>
+			<option value="13" >CHEFCHAOUEN (Tribunal de 1ère Instance)</option>
+			<option value="280" >DRIOUCH (Tribunal de 1ère Instance)</option>
+			<option value="14" >ELJADIDA (Tribunal de 1ère Instance)</option>
+			<option value="15" >ERRACHIDIA (Tribunal de 1ère Instance)</option>
+			<option value="17" >ESSAOUIRA (Tribunal de 1ère Instance)</option>
+			<option value="16" >ESSMARA (Tribunal de 1ère Instance)</option>
+			<option value="19" >FES (Tribunal de Commerce)</option>
+			<option value="18" >FKIH BEN SALLAH (Tribunal de 1ère Instance)</option>
+			<option value="20" >GUELMIM (Tribunal de 1ère Instance)</option>
+			<option value="21" >GUERCIF (Tribunal de 1ère Instance)</option>
+			<option value="22" >IMINTANOUTE (Tribunal de 1ère Instance)</option>
+			<option value="23" >INZEGANE (Tribunal de 1ère Instance)</option>
+			<option value="62" >KASBA TADLA (Tribunal de 1ère Instance)</option>
+			<option value="24" >KELAA SRAGHNA (Tribunal de 1ère Instance)</option>
+			<option value="25" >KENITRA (Tribunal de 1ère Instance)</option>
+			<option value="26" >KHEMISSET (Tribunal de 1ère Instance)</option>
+			<option value="27" >KHENIFRA (Tribunal de 1ère Instance)</option>
+			<option value="28" >KHOURIBGA (Tribunal de 1ère Instance)</option>
+			<option value="29" >KSAR KEBIR (Tribunal de 1ère Instance)</option>
+			<option value="30" >LAAYOUNE (Tribunal de 1ère Instance)</option>
+			<option value="31" >LARACHE (Tribunal de 1ère Instance)</option>
+			<option value="32" >MARRAKECH (Tribunal de Commerce)</option>
+			<option value="70" >MECHRA BEL KSIRI (Tribunal de 1ère Instance)</option>
+			<option value="33" >MEKNES (Tribunal de Commerce)</option>
+			<option value="34" >MIDELT (Tribunal de 1ère Instance)</option>
+			<option value="67" >MISSOUR (Tribunal de 1ère Instance)</option>
+			<option value="35" >MOHAMMEDIA (Tribunal de 1ère Instance)</option>
+			<option value="36" >NADOR (Tribunal de 1ère Instance)</option>
+			<option value="37" >OUARZAZATE (Tribunal de 1ère Instance)</option>
+			<option value="38" >OUAZZANE (Tribunal de 1ère Instance)</option>
+			<option value="39" >OUED EDDAHAB (DAKHLA) (Tribunal de 1ère Instance)</option>
+			<option value="40" >OUED ZEM (Tribunal de 1ère Instance)</option>
+			<option value="41" >OUJDA (Tribunal de Commerce)</option>
+			<option value="42" >RABAT (Tribunal de Commerce)</option>
+			<option value="43" >ROMMANI (Tribunal de 1ère Instance)</option>
+			<option value="44" >SAFI (Tribunal de 1ère Instance)</option>
+			<option value="45" >SALE (Tribunal de 1ère Instance)</option>
+			<option value="46" >SEFROU (Tribunal de 1ère Instance)</option>
+			<option value="47" >SETTAT (Tribunal de 1ère Instance)</option>
+			<option value="48" >SIDI BENNOUR (Tribunal de 1ère Instance)</option>
+			<option value="292" >SIDI IFNI (Tribunal de 1ère Instance)</option>
+			<option value="49" >SIDI KACEM (Tribunal de 1ère Instance)</option>
+			<option value="50" >SIDI SLIMANE (Tribunal de 1ère Instance)</option>
+			<option value="51" >SOUK LARBAA (Tribunal de 1ère Instance)</option>
+			<option value="73" >SOUK SEBT OULED NEMMA (Tribunal de 1ère Instance)</option>
+			<option value="53" >TANGER (Tribunal de Commerce)</option>
+			<option value="52" >TANTAN (Tribunal de 1ère Instance)</option>
+			<option value="58" >TAOUNAT (Tribunal de 1ère Instance)</option>
+			<option value="65" >TAOURIRT (Tribunal de 1ère Instance)</option>
+			<option value="72" >TARGUIST (Tribunal de 1ère Instance)</option>
+			<option value="59" >TAROUDANT (Tribunal de 1ère Instance)</option>
+			<option value="54" >TATA (Tribunal de 1ère Instance)</option>
+			<option value="55" >TAZA (Tribunal de 1ère Instance)</option>
+			<option value="68" >TEMARA (Tribunal de 1ère Instance)</option>
+			<option value="56" >TETOUAN (Tribunal de 1ère Instance)</option>
+			<option value="71" >TIFLET (Tribunal de 1ère Instance)</option>
+			<option value="69" >TINGHIR (Tribunal de 1ère Instance)</option>
+			<option value="57" >TIZNIT (Tribunal de 1ère Instance)</option>
+			<option value="60" >YOUSSOUFIA (Tribunal de 1ère Instance)</option>
+			<option value="61" >ZAGORA (Tribunal de 1ère Instance)</option>
+
+
+
+
+
+                            </select>
+                        </div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[47px]  font-normal text-gray-900 dark:text-white">Date
+                                de dépôt</label>
+                            <input type="date" id="Date_depot_ch_de" name="Date_depot_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire la Date " />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[21px]  font-normal text-gray-900 dark:text-white">Numéro
+                                de dépôt</label>
+                            <input type="text" id="nemuro_depot_ch_de" name="nemuro_depot_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le Numéro " />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[44px]  font-normal text-gray-900 dark:text-white">Numéro
+                                de RC</label>
+                            <input type="text" id="nemuro_rc_ch_de" name="nemuro_rc_ch_de"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le Numéro " />
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div id="confirm"
+                        class="w-10/12 mx-auto   md:w-[33%] relative  mt-8   h-12 flex  cursor-pointer   rounded-lg bg-transparent">
+
+                        <div
+                            class="w-5/6 flex justify-center  items-center bg-[#4094bc] hover:scale-105   text-white font-medium   rounded-lg  ">
+                            Confirmer les informations de l'annonce</div>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="relative w-[98%] h-[900px] md:mx-auto ml-14 md:h-[300px] bg-white  mt-20 mb-3  rounded-lg ">
+
+
+        <div class="  absolute mt-10 ml-[50px] md:mt-32 md:ml-9  text-black">
+            <div class="ml-3">
+                <p class="text-4xl font-semibold ">Follow us</p>
+            </div>
+            <div class="  ml-7 text-2xl mt-2">
+                <p><i class='bx bxl-facebook-square'></i> <a
+                        href="https://www.linkedin.com/company/wehelpgroup/posts/?feedView=all"><i
+                            class='bx bxl-linkedin-square'></i> </a> <i class='bx bxl-instagram'></i> <a
+                        href="https://wehelp.ma/"><i class='bx bx-world'></i></a></p>
+            </div>
+        </div>
+        <div class="absolute mt-44 left-20 md:mt-24 w-full">
+            <div class=" flex flex-col gap-8 md:flex md:flex-row md:justify-center md:gap-24 text-lg">
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class="">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class="">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Feedback </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black ">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const apiUrl = "./cities.json";
+        const selectElement=document.querySelector(".ville_class");
+let a = 0;
+
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((data) => {
+    const cities = data.cities.data;
+    cities.forEach((city) => {
+      const option1 = document.createElement("option");
+      
+
+      option1.value = a;
+      option1.textContent = city.names.fr;
+
+       selectElement.appendChild(option1);
+      
+      a++;
+    });
+  })
+  .catch((error) => {
+    console.error("Error fetching cities:", error);
+  });
+    </script>
+</body>
+
+</html>

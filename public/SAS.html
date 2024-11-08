@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .textareaaa::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f8f4f4] overflow-x-hidden">
+    <div class="  w-full h-[60px] bg-[#4094bc]  z-10  fixed">
+        <div>
+            <h1 class="text-white text-2xl font-bold mt-3   ml-[3%] "><a href="./home.php"><i class='bx bx-home-alt-2'></i>Annonce</a>
+            </h1>
+        </div>
+        <div class="absolute left-[42%] top-4 text-white text-lg font-normal">
+            <div class="yup flex gap-[20px] font-normal ">
+                <a href="#" class="" id="annonce"> <span class="relative top-1"><i
+                            class='bx bxs-megaphone text-2xl   '></i></span> Annonces Légales</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-bookmark-alt text-2xl '></i></span>
+                    Actualités</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-info-circle text-2xl mr-1'></i></span>infos
+                    Pratiques</a>
+                <a href="#"><span class="relative top-1"><i class='bx bx-up-arrow-circle   text-2xl mr-1'></i></span>
+                    Fonctionnalités</a>
+            </div>
+            <div id="detail"
+                class=" hidden absolute top-[45px] left-3 w-[160px] h-[160px] bg-[#4094bc] rounded-md  flex flex-col text-white"
+                style="line-height: 1;">
+                <div id="publiez"
+                    class="w-full h-1/3 flex   justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-2"> Publiez une annonce légale</p>
+                </div>
+                <div id="pubs"
+                    class="w-full h-1/3 flex  justify-center items-center border-b border-white cursor-pointer">
+                    <p class="ml-1">Annonces publiées</p>
+
+                </div>
+                <div id="journal" class="w-full h-1/3 flex   justify-center items-center  cursor-pointer">
+
+                    <p class="ml-2">Le journal des annonces légales</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="absolute left-[91%] top-[10px]  text-white ">
+            <button class="bg-transparent border-2 border-white    rounded-xl px-4 py-[6px]  ">Profil</button>
+        </div>
+    </div>
+
+    <form  action="./classes/sas.php" method="post">
+    <div class=" mx-auto md:mx-0 relative w-full overflow-x-hidden">
+        <div class="mt-24   w-full    ">
+            <div class="ml-20 bg-white w-fit p-4">
+                <h1 class="font-bold text-xl text-[#dc7c3f]">Annonce légale de création de Société Anonyme Simplifiée
+                    (SAS)</h1>
+
+                <p>Ce modèle d'annonce légale en ligne vous permet de publier une Annonce légale <br> de création de
+                    Société Anonyme Simplifiée (SAS) dans un journal d'annonces <br> légales habilité.</p>
+            </div>
+            <div class="w-[88%]  mt-7  mx-auto">
+                <div class="bg-white  w-full">
+                    <h1 class="text-[#dc7c3f] text-xl font-bold  mt-2 text-center "><i
+                            class='bx bx-edit text-3xl mr-1 relative top-[6px]'></i>Saisie des informations</h1>
+
+                    <div class="w-full mt-3">
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-2 text-[#4094bc] ">Statuts</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label for="type_acte_sas"
+                                class="block mb-2 md:mb-0  mr-12    font-normal text-gray-900 dark:text-white">Nature
+                                de l'acte</label>
+                            <select id="type_acte_sas" name="type_acte_sas"
+                                class="bg-gray-50 placeholder-gray-400  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[35%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir la nature de l'acte</option>
+
+                                <option value="1">Acte sous seing privé </option>
+                                <option value="2">Acte Authentique </option>
+
+                            </select>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte_sas"
+                                class="block mb-2 md:mb-0   mr-16    font-normal text-gray-900 dark:text-white">Date de
+                                l'acte</label>
+                            <input type="date" id="date_acte_sas" name="date_acte_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[35%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required />
+                        </div>
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="bg-white  w-full">
+
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">La société</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[62px]    font-normal text-gray-900 dark:text-white">Dénomination</label>
+                            <input type="text" id="denomination_sas" name="denomination_sas"
+                                class="bg-gray-50 md:ml-7  border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  placeholder-text-sm placeholder-gray-400"
+                                placeholder="    Veuillez entrer la dénomination ou le nom de l'entité" required>
+
+                            </input>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[128px]   font-normal text-gray-900 dark:text-white">Sigle</label>
+                            <input type="text" id="Sigle_sas" name="Sigle_sas"
+                                class="bg-gray-50 border md:ml-7  placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[20%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer le sigle" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label class="block mb-2 md:mb-0  mr-16    font-normal text-gray-900 dark:text-white">Forme
+                                sociale</label>
+                            <select id="forme_sas" name="forme_sas"
+                                class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir la forme sociale</option>
+
+                                <option value="6">Société Anonyme Simplifiée (SAS)</option>
+
+
+
+                            </select>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte"
+                                class="block mb-2 md:mb-0   mr-[70px] font-normal text-gray-900 dark:text-white">Object
+                                social</label>
+                            <textarea id="object_social_sas" name="object_social_sas"
+                                class="bg-gray-50 border md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer l'object"></textarea>
+                        </div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte"
+                                class="block mb-2 md:mb-0   mr-[75px]   font-normal text-gray-900 dark:text-white">Capital
+                                (DH)</label>
+                            <input type="number" id="capital_sas" name="capital_sas"
+                                class="bg-gray-50 border placeholder-gray-400  md:ml-7 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]   "
+                                placeholder="   Ecrire le capital" required />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte"
+                                class="block mb-2 md:mb-0   mr-2   font-normal text-gray-900 dark:text-white">Valeur
+                                nominale (DH)</label>
+                            <input type="number" id="valeur_nominale_sas" name="valeur_nominale_sas"
+                                class="bg-gray-50 border   md:ml-7  placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[20%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer la valeur" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte"
+                                class="block mb-2 md:mb-0   mr-2  leading-[1.1] font-normal text-gray-900 dark:text-white">Montant
+                                des apports <br> en numéraire (DH)</label>
+                            <input type="number" id="valeur_apport_sas" name="valeur_apport_sas"
+                                class="bg-gray-50 border  md:ml-7  placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[20%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer le Montant" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[45px]   leading-[1.1] font-normal text-gray-900 dark:text-white">Description
+                                des <br> apports
+                            </label>
+                            <input type="text" id="description_apport_sas" name="description_apport_sas"
+                                class="bg-gray-50 md:ml-7  border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  placeholder-text-sm placeholder-gray-400"
+                                placeholder="    Veuillez entrer ..." required>
+
+                            </input>
+                        </div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label for="date_acte"
+                                class="block mb-2 md:mb-0   mr-[75px] leading-[1.1] font-normal text-gray-900 dark:text-white">Durée
+                                ANS</label>
+                            <input type="number" id="Duee_ans_sas" name="Duee_ans_sas"
+                                class="bg-gray-50 border  md:ml-7  placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[20%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="    Veuillez entrer la Durée" />
+                        </div>
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+                <div class="bg-white  w-full">
+
+
+                    <div class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Adresse du siège social</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-24   font-normal text-gray-900 dark:text-white">Adresse</label>
+                            <input type="text" id="adresse_sas" name="adresse_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire l'adresse" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[68px]    font-normal text-gray-900 dark:text-white">Code
+                                postal</label>
+                            <input type="text" id="code_postal_sas" name="code_postal_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[25%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le  code" />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[120px]    font-normal text-gray-900 dark:text-white">Ville</label>
+                            <select id="ville_sas" name="ville_sas"
+                                class="bg-gray-50 placeholder-gray-400  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option value="" disabled selected>choisir la ville</option>
+
+
+
+                            </select>
+                        </div>
+                        <div class="w-full h-6"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white  w-full">
+
+
+                    <div id="represant" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Les représentants légaux</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div id="dupliquer_represant" class="dupliquer_represant_class">
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[114px]   font-normal text-gray-900 dark:text-white">Type</label>
+                                <select id="type_personne_sas" name="type_personne_sas[]"
+                                    class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+                      
+
+                                    <option class=" " value="" disabled selected>choisir le type</option>
+
+                                    <option value="1"> Personne physique</option>
+                                    <option value="2">Personne morale</option>
+
+
+
+                                </select>
+                            </div>
+                            <input type="hidden" value="2" name="type_announce">
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[96px]   font-normal text-gray-900 dark:text-white">Qualité</label>
+                                <select id="qualite_sas" name="qualite_sas[]"
+                                    class="bg-gray-50 qualite_represant placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+
+
+                                    <option class=" " value="" disabled selected>choisir la Qualité du dirigeant
+                                    </option>
+
+                                    <option value="3"> Directeur Général</option>
+                                    <option value="4">Directeur Général Délégué</option>
+                                    <option value="5">Président</option>
+                                    <option value="6">Président Directeur Général</option>
+                                    <option value="7">Autre</option>
+
+
+
+
+
+                                </select>
+                            </div>
+                            <div class="morale_remove_represant">
+
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                    <label
+                                        class="block mb-2 md:mb-0  mr-[99px]   font-normal text-gray-900 dark:text-white">Civilité</label>
+                                    <select id="civilite_sas" name="civilite_sas[]"
+                                        class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                         >
+
+
+                                        <option class=" " value="" disabled selected>choisir la Civilité</option>
+
+                                        <option value="1"> Monsieur </option>
+                                        <option value="2">Madame</option>
+
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="morale_remove_represant">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[112px]  font-normal text-gray-900 dark:text-white">Nom</label>
+                                    <input type="text" id="Nom_represannat_sas" name="Nom_represannat_sas[]"
+                                        class="bg-gray-50 border    md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire le nom " />
+                                </div>
+                            </div>
+                            <div class="morale_remove_represant">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label for="date_acte"
+                                        class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Prénom</label>
+                                    <input type="text" id="prenom_represannt_sas" name="prenom_represannt_sas[]"
+                                        class="bg-gray-50 border     md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire le Prénom" />
+                                </div>
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                <label for="date_acte"
+                                    class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Adresse</label>
+                                <input type="text" id="adresse_represantant_sas" name="adresse_represantant_sas[]"
+                                    class="bg-gray-50 border   md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required placeholder="   Ecrire l'adresse" />
+                            </div>
+                            <div class="hidden morale_add_represant">
+                                <div
+                                    class=" flex flex-col  ml-[9%]      md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[46px]   font-normal text-gray-900 dark:text-white">Dénomination</label>
+                                    <input type="text" id="denomination_represantant_sas"
+                                        name="denomination_represantant_sas[]"
+                                        class="bg-gray-50 border    md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire l'adresse" />
+                                </div>
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                <label for="date_acte"
+                                    class="block mb-2 md:mb-0   mr-[62px]    font-normal text-gray-900 dark:text-white">Code
+                                    postal</label>
+                                <input type="text" id="code_postal_represantant_sas"
+                                    name="code_postal_represantant_sas[]"
+                                    class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[25%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required placeholder="   Ecrire le  code" />
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[115px]    font-normal text-gray-900 dark:text-white">Ville</label>
+                                <select id="ville_reprsenat_sas" name="ville_reprsenat_sas[]"
+                                    class="bg-gray-50 ville_reprsenat_sas_class placeholder-gray-400  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+
+
+                                    <option value="" disabled selected>choisir la ville</option>
+
+
+
+                                </select>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="add_represant"
+                        class="w-10/12 mx-auto md:mx-0 md:w-[25%] relative  mt-5 md:left-[78px] h-10 flex  cursor-pointer   rounded-lg bg-transparent">
+                        <div id="plus_but"
+                            class="w-1/6 flex  justify-center   items-center bg-white text-[#dc7c3f] border-2 border-[#dc7c3f] font-semibold text-2xl h-10 rounded-l-lg">
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div
+                            class="w-5/6 flex justify-center  items-center bg-[#dc7c3f] text-white font-medium border-2 border-[#dc7c3f] rounded-r-lg ">
+                            Ajouter un représentant légal</div>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+
+                <div class="bg-white  w-full">
+
+
+                    <div id="membre_div_big" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Les membres de l'organe
+                            d'administration</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div id="dupliquer_membre" class="dupliquer_membre_class">
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[114px]   font-normal text-gray-900 dark:text-white">Type</label>
+                                <select id="type_membre" name="type_membre[]"
+                                    class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+
+
+                                    <option class=" " value="" disabled selected>choisir le type</option>
+
+                                    <option value="1"> Personne physique</option>
+                                    <option value="2">Personne morale</option>
+
+
+
+                                </select>
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[95px]   font-normal text-gray-900 dark:text-white">Qualité</label>
+                                <select id="qualite_membre" name="qualite_membre[]"
+                                    class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+
+
+                                    <option class=" " value="" disabled selected>choisir la Qualité</option>
+
+                                    <option value="8"> Administrateur </option>
+                                    <option value="9">Membre du Conseil de surveillance</option>
+                                    <option value="10">Président du Conseil d'administration</option>
+
+                                    <option value="11">Président du Conseil de surveillance</option>
+
+                                    <option value="7">Autre</option>
+
+
+
+
+                                </select>
+                            </div>
+                            <div class="remove_field_in_membre">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                    <label
+                                        class="block mb-2 md:mb-0  mr-[99px]   font-normal text-gray-900 dark:text-white">Civilité</label>
+                                    <select id="civilite_membre" name="civilite_membre[]"
+                                        class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                         >
+
+
+                                        <option class=" " value="" disabled selected>choisir la Civilité</option>
+
+                                        <option value="1"> Monsieur </option>
+                                        <option value="2">Madame</option>
+
+
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hidden  denomination_membre_class ">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[47px]  font-normal text-gray-900 dark:text-white">Dénomination</label>
+                                    <input type="text" id="denomination_membre" name="denomination_membre[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire la Dénomination " />
+                                </div>
+                            </div>
+
+                            <div class="remove_field_in_membre">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[112px]  font-normal text-gray-900 dark:text-white">Nom</label>
+                                    <input type="text" id="Nom_membre" name="Nom_membre[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire le nom " />
+                                </div>
+                            </div>
+                            <div class="remove_field_in_membre">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label for="date_acte"
+                                        class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Prénom</label>
+                                    <input type="text" id="prenom_membre" name="prenom_membre[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                          placeholder="   Ecrire le Prénom" />
+                                </div>
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                <label for="date_acte"
+                                    class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Adresse</label>
+                                <input type="text" id="adresse_membre" name="adresse_membre[]"
+                                    class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required placeholder="   Ecrire l'adresse" />
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                <label for="date_acte"
+                                    class="block mb-2 md:mb-0   mr-[62px]    font-normal text-gray-900 dark:text-white">Code
+                                    postal</label>
+                                <input type="text" id="code_postal_membre" name="code_postal_membre[]"
+                                    class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[25%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required placeholder="   Ecrire le  code" />
+                            </div>
+                            <div
+                                class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                <label
+                                    class="block mb-2 md:mb-0  mr-[115px]    font-normal text-gray-900 dark:text-white">Ville</label>
+                                <select id="ville_membre" name="ville_membre[]"
+                                    class="bg-gray-50 placeholder-gray-400  ville_membre_class  md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                    required>
+
+
+                                    <option value="" disabled selected>choisir la ville</option>
+
+
+
+                                </select>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="add_membre"
+                        class="w-10/12 mx-auto md:mx-0 md:w-[17%] relative  mt-5 md:left-[78px] h-10 flex  cursor-pointer   rounded-lg bg-transparent">
+                        <div id="plus_button"
+                            class="w-1/6 flex  justify-center   items-center bg-white text-[#dc7c3f] border-2 border-[#dc7c3f] font-semibold text-2xl h-10 rounded-l-lg">
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div
+                            class="w-5/6 flex justify-center  items-center bg-[#dc7c3f] text-white font-medium border-2 border-[#dc7c3f] rounded-r-lg ">
+                            Ajouter un membre</div>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+
+
+                <div class="bg-white  w-full">
+
+
+                    <div id="commissaire_sas" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Commissaire aux comptes</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+                        <div id="dupliquer_commissaire_sas ">
+
+                            <div class="added_commaissaire_sas">
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                    <label
+                                        class="block mb-2 md:mb-0  mr-[112px]   font-normal text-gray-900 dark:text-white">Type</label>
+                                    <select id="type_commaissaire_sas" name="type_commaissaire_sas[]"
+                                        class="bg-gray-50  type_commaissaire_class placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required>
+
+
+                                        <option class=" " value="" disabled selected>choisir le type
+                                        </option>
+
+                                        <option value="1"> Personne physique</option>
+                                        <option value="2">Personne morale</option>
+
+
+
+                                    </select>
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                    <label
+                                        class="block mb-2 md:mb-0  mr-[99px]   font-normal text-gray-900 dark:text-white">Civilité</label>
+                                    <select id="civilite_commaisaire_sas" name="civilite_commaisaire_sas[]"
+                                        class="bg-gray-50 placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required>
+
+
+                                        <option class=" " value="" disabled selected>choisir la Civilité</option>
+
+                                        <option value="1"> Monsieur </option>
+                                        <option value="2">Madame</option>
+
+
+
+                                    </select>
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[112px]  font-normal text-gray-900 dark:text-white">Nom</label>
+                                    <input type="text" id="Nom_commaisaire_sas" name="Nom_commaisaire_sas[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required placeholder="   Ecrire le nom " />
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Prénom</label>
+                                    <input type="text" id="prenom_commaisaire_sas" name="prenom_commaisaire_sas[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required placeholder="   Ecrire le Prénom" />
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[90px]   font-normal text-gray-900 dark:text-white">Adresse</label>
+                                    <input type="text" id="adresse_commaisaire_sas" name="adresse_commaisaire_sas[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required placeholder="   Ecrire l'adresse" />
+                                </div>
+                                <div id="Denomination_commaisaire_sas" class="hidden Denomination_commaisaire_sas_div">
+                                    <div
+                                        class="flex flex-col  ml-[9%]      md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                        <label for="Denomination_commaisaire_sas"
+                                            class="block mb-2 md:mb-0   mr-[45px]   font-normal text-gray-900 dark:text-white">Dénomination</label>
+                                        <input type="text" id="Denomination_commaisaire_sas"
+                                            name="Denomination_commaisaire_sas[]"
+                                            class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                              placeholder="   Ecrire ici" />
+                                    </div>
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                                    <label
+                                        class="block mb-2 md:mb-0   mr-[62px]    font-normal text-gray-900 dark:text-white">Code
+                                        postal</label>
+                                    <input type="text" id="code_postal_commaisaire_sas"
+                                        name="code_postal_commaisaire_sas[]"
+                                        class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[25%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required placeholder="   Ecrire le  code" />
+                                </div>
+                                <div
+                                    class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                                    <label
+                                        class="block mb-2 md:mb-0  mr-[115px]    font-normal text-gray-900 dark:text-white">Ville</label>
+                                    <select id="ville_commaisaire_sas" name="ville_commaisaire_sas[]"
+                                        class="bg-gray-50 placeholder-gray-400 ville_commaisaire_sas_class md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                        required>
+
+
+                                        <option value="" disabled selected>choisir la ville</option>
+
+
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="add_commaisaire_sas"
+                        class="w-10/12 mx-auto md:mx-0 md:w-[30%] relative  mt-5 md:left-[78px] h-10 flex  cursor-pointer   rounded-lg bg-transparent">
+                        <div id="plus_but_commaisire"
+                            class="w-1/6 flex  justify-center   items-center bg-white text-[#dc7c3f] border-2 border-[#dc7c3f] font-semibold text-2xl h-10 rounded-l-lg">
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div
+                            class="w-5/6 flex justify-center  items-center bg-[#dc7c3f] text-white font-medium border-2 border-[#dc7c3f] rounded-r-lg ">
+                            Ajouter un commissaire aux comptes</div>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+                <div class="bg-white  w-full">
+
+
+                    <div id="stipulation_sas" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Stipulations statutaires</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[3px] font-normal text-gray-900 dark:text-white">Organe
+                                social habilité</label>
+                            <textarea id="organe_social_sas" name="organe_social_sas"
+                                class="bg-gray-50 border textareaaa md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required
+                                placeholder="Saisir ici les conditions d'agrément des cessionnaires d'actions et la désignation de l'organe social habilité à statuer sur les demandes d'agrément."></textarea>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0     font-normal text-gray-900 dark:text-white">Dispositions
+                                statutaires</label>
+                            <textarea id="dispositions_sas" name="dispositions_sas"
+                                class="bg-gray-50 border textareaaa md:ml-5 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="Saisir ici les dispositions statutaires relatives à la constitution de réserves et à la répartition des bénéfices.
+
+                        "></textarea>
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[80px] font-normal text-gray-900 dark:text-white">Avantages</label>
+                            <textarea id="avantages_sas" name="avantages_sas"
+                                class="bg-gray-50 border textareaaa md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]   focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc]  "
+                                required placeholder="Saisir ici les avantages particuliers stipulés au profit de toute personne.
+
+
+
+                    "></textarea>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="w-full h-6"></div>
+                </div>
+                <div class="bg-white  w-full">
+
+
+                    <div id="Depot_sas" class="w-full mt-3">
+                        <div class="w-full h-2"></div>
+                        <h2 class="font-bold text-xl ml-9 md:ml-12 mt-8 text-[#4094bc] ">Dépôt légal</h2>
+                        <div class=" w-[80%] xl:w-[94%] ml-9 md:ml-12 mr-3 opacity-40 h-[1px] bg-[#4094bc] "></div>
+
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-5">
+                            <label
+                                class="block mb-2 md:mb-0  mr-[93px]   font-normal text-gray-900 dark:text-white">Tribunal</label>
+                            <select id="Tribunal_sas" name="Tribunal_sas"
+                                class="bg-gray-50  type_commaissaire_class placeholder-gray-400 md:ml-7 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[30%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required>
+
+
+                                <option class=" " value="" disabled selected>choisir le type
+                                </option>
+                                <option value="1">AGADIR (Tribunal de Commerce)</option>
+                                <option value="2">ALHOCEIMA (Tribunal de 1ère Instance)</option>
+                                <option value="64">ASILAH (Tribunal de 1ère Instance)</option>
+                                <option value="3">AZILAL (Tribunal de 1ère Instance)</option>
+                                <option value="66">AZROU (Tribunal de 1ère Instance)</option>
+                                <option value="4">BEN AHMED (Tribunal de 1ère Instance)</option>
+                                <option value="5">BENGUERIR (Tribunal de 1ère Instance)</option>
+                                <option value="6">BENI MELLAL (Tribunal de 1ère Instance)</option>
+                                <option value="7">BEN SLIMANE (Tribunal de 1ère Instance)</option>
+                                <option value="8">BERKANE (Tribunal de 1ère Instance)</option>
+                                <option value="9">BERRECHID (Tribunal de 1ère Instance)</option>
+                                <option value="10">BOUARFA (Tribunal de 1ère Instance)</option>
+                                <option value="63">BOUJAAD (Tribunal de 1ère Instance)</option>
+                                <option value="11">BOULMANE (Tribunal de 1ère Instance)</option>
+                                <option value="12">CASABLANCA (Tribunal de Commerce)</option>
+                                <option value="13">CHEFCHAOUEN (Tribunal de 1ère Instance)</option>
+                                <option value="280">DRIOUCH (Tribunal de 1ère Instance)</option>
+                                <option value="14">ELJADIDA (Tribunal de 1ère Instance)</option>
+                                <option value="15">ERRACHIDIA (Tribunal de 1ère Instance)</option>
+                                <option value="17">ESSAOUIRA (Tribunal de 1ère Instance)</option>
+                                <option value="16">ESSMARA (Tribunal de 1ère Instance)</option>
+                                <option value="19">FES (Tribunal de Commerce)</option>
+                                <option value="18">FKIH BEN SALLAH (Tribunal de 1ère Instance)</option>
+                                <option value="20">GUELMIM (Tribunal de 1ère Instance)</option>
+                                <option value="21">GUERCIF (Tribunal de 1ère Instance)</option>
+                                <option value="22">IMINTANOUTE (Tribunal de 1ère Instance)</option>
+                                <option value="23">INZEGANE (Tribunal de 1ère Instance)</option>
+                                <option value="62">KASBA TADLA (Tribunal de 1ère Instance)</option>
+                                <option value="24">KELAA SRAGHNA (Tribunal de 1ère Instance)</option>
+                                <option value="25">KENITRA (Tribunal de 1ère Instance)</option>
+                                <option value="26">KHEMISSET (Tribunal de 1ère Instance)</option>
+                                <option value="27">KHENIFRA (Tribunal de 1ère Instance)</option>
+                                <option value="28">KHOURIBGA (Tribunal de 1ère Instance)</option>
+                                <option value="29">KSAR KEBIR (Tribunal de 1ère Instance)</option>
+                                <option value="30">LAAYOUNE (Tribunal de 1ère Instance)</option>
+                                <option value="31">LARACHE (Tribunal de 1ère Instance)</option>
+                                <option value="32">MARRAKECH (Tribunal de Commerce)</option>
+                                <option value="70">MECHRA BEL KSIRI (Tribunal de 1ère Instance)</option>
+                                <option value="33">MEKNES (Tribunal de Commerce)</option>
+                                <option value="34">MIDELT (Tribunal de 1ère Instance)</option>
+                                <option value="67">MISSOUR (Tribunal de 1ère Instance)</option>
+                                <option value="35">MOHAMMEDIA (Tribunal de 1ère Instance)</option>
+                                <option value="36">NADOR (Tribunal de 1ère Instance)</option>
+                                <option value="37">OUARZAZATE (Tribunal de 1ère Instance)</option>
+                                <option value="38">OUAZZANE (Tribunal de 1ère Instance)</option>
+                                <option value="39">OUED EDDAHAB (DAKHLA) (Tribunal de 1ère Instance)</option>
+                                <option value="40">OUED ZEM (Tribunal de 1ère Instance)</option>
+                                <option value="41">OUJDA (Tribunal de Commerce)</option>
+                                <option value="42">RABAT (Tribunal de Commerce)</option>
+                                <option value="43">ROMMANI (Tribunal de 1ère Instance)</option>
+                                <option value="44">SAFI (Tribunal de 1ère Instance)</option>
+                                <option value="45">SALE (Tribunal de 1ère Instance)</option>
+                                <option value="46">SEFROU (Tribunal de 1ère Instance)</option>
+                                <option value="47">SETTAT (Tribunal de 1ère Instance)</option>
+                                <option value="48">SIDI BENNOUR (Tribunal de 1ère Instance)</option>
+                                <option value="292">SIDI IFNI (Tribunal de 1ère Instance)</option>
+                                <option value="49">SIDI KACEM (Tribunal de 1ère Instance)</option>
+                                <option value="50">SIDI SLIMANE (Tribunal de 1ère Instance)</option>
+                                <option value="51">SOUK LARBAA (Tribunal de 1ère Instance)</option>
+                                <option value="73">SOUK SEBT OULED NEMMA (Tribunal de 1ère Instance)</option>
+                                <option value="53">TANGER (Tribunal de Commerce)</option>
+                                <option value="52">TANTAN (Tribunal de 1ère Instance)</option>
+                                <option value="58">TAOUNAT (Tribunal de 1ère Instance)</option>
+                                <option value="65">TAOURIRT (Tribunal de 1ère Instance)</option>
+                                <option value="72">TARGUIST (Tribunal de 1ère Instance)</option>
+                                <option value="59">TAROUDANT (Tribunal de 1ère Instance)</option>
+                                <option value="54">TATA (Tribunal de 1ère Instance)</option>
+                                <option value="55">TAZA (Tribunal de 1ère Instance)</option>
+                                <option value="68">TEMARA (Tribunal de 1ère Instance)</option>
+                                <option value="56">TETOUAN (Tribunal de 1ère Instance)</option>
+                                <option value="71">TIFLET (Tribunal de 1ère Instance)</option>
+                                <option value="69">TINGHIR (Tribunal de 1ère Instance)</option>
+                                <option value="57">TIZNIT (Tribunal de 1ère Instance)</option>
+                                <option value="60">YOUSSOUFIA (Tribunal de 1ère Instance)</option>
+                                <option value="61">ZAGORA (Tribunal de 1ère Instance)</option>
+
+
+
+
+
+
+
+
+
+
+                            </select>
+                        </div>
+
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[47px]  font-normal text-gray-900 dark:text-white">Date
+                                de dépôt</label>
+                            <input type="date" id="Date_depot_sas" name="Date_depot_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire la Date " />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[21px]  font-normal text-gray-900 dark:text-white">Numéro
+                                de dépôt</label>
+                            <input type="text" id="nemuro_depot_sas" name="nemuro_depot_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le Numéro " />
+                        </div>
+                        <div
+                            class=" flex flex-col  ml-[9%]    md:flex md:flex-row md:justify-start md:items-center  md:ml-20 mt-3">
+                            <label
+                                class="block mb-2 md:mb-0   mr-[44px]  font-normal text-gray-900 dark:text-white">Numéro
+                                de RC</label>
+                            <input type="text" id="nemuro_rc_sas" name="nemuro_rc_sas"
+                                class="bg-gray-50 border  md:ml-7 placeholder-gray-400 border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-[#4094bc]  focus:border-[#4094bc]  block w-11/12 md:w-[50%] p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#4094bc]  dark:focus:border-[#4094bc] "
+                                required placeholder="   Ecrire le Numéro " />
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div id="confirm_sas"
+                        class="w-10/12 mx-auto   md:w-[33%] relative  mt-8   h-12 flex  cursor-pointer   rounded-lg bg-transparent">
+
+                        <button type="submit" name="sas_information"
+                        class="w-5/6 flex justify-center  items-center bg-[#4094bc] hover:scale-105   text-white font-medium   rounded-lg  ">
+                        Confirmer les informations de l'annonce</button>
+
+                    </div>
+
+                    <div class="w-full h-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     </form>
+    <!-- footer -->
+
+    <div class="relative w-[98%] h-[900px] md:mx-auto ml-14 md:h-[300px] bg-white  mt-20 mb-3  rounded-lg ">
+
+
+        <div class="  absolute mt-10 ml-[50px] md:mt-32 md:ml-9  text-black">
+            <div class="ml-3">
+                <p class="text-4xl font-semibold ">Follow us</p>
+            </div>
+            <div class="  ml-7 text-2xl mt-2">
+                <p><i class='bx bxl-facebook-square'></i> <a
+                        href="https://www.linkedin.com/company/wehelpgroup/posts/?feedView=all"><i
+                            class='bx bxl-linkedin-square'></i> </a> <i class='bx bxl-instagram'></i> <a
+                        href="https://wehelp.ma/"><i class='bx bx-world'></i></a></p>
+            </div>
+        </div>
+        <div class="absolute mt-44 left-20 md:mt-24 w-full">
+            <div class=" flex flex-col gap-8 md:flex md:flex-row md:justify-center md:gap-24 text-lg">
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class="">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class="">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class="">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black">
+                    <a href="">
+                        <p class="text-2xl font-medium">Feedback </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class="">packs</p>
+                    </a>
+
+                </div>
+                <div class="text-lg text-black ">
+                    <a href="">
+                        <p class="text-2xl font-medium">Information </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">contact us </p>
+                    </a>
+                    <a href="">
+                        <p class=" ">services</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">features</p>
+                    </a>
+                    <a href="">
+                        <p class=" ">packs</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./sas.js">
+    </script>
+</body>
+
+</html>
