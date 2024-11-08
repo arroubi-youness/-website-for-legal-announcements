@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../public/output.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         html {
@@ -16,8 +16,7 @@
         }
     </style>
 </head>
-<!-- <?php session_start();  ?> -->
-<body class="overflow-x-hidden w-full ">
+ <body class="overflow-x-hidden w-full ">
     <div id="garde" class=" w-[100%]  h-[590px]   md:w-full md:h-screen  bg-no-repeat  mb-5  bg-slate-100  ">
 
         <div class="    w-[100%]  h-screen  md:w-full   overflow-hidden   relative">
@@ -62,15 +61,7 @@
                     <button class="bg-transparent border-2 border-white    rounded-xl px-4 py-[6px]  ">Profil</button>
                 </div>
             </div>
-            <?php
-
-
-<!-- if (isset($_SESSION['message'])) {
-    echo '<div id="success-message" style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; width: 280px; position: fixed; top: 80px; right: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">' . $_SESSION['message'] . '</div>';
-     unset($_SESSION['message']);
-}
-
-?> -->
+    
 
             <div>
 
@@ -98,7 +89,7 @@
             <div class="ml-5 hidden md:block relative top-40 left-[57%] mt-16">
                 <div class="   w-[380px] h-[250px] grad  rounded-[50px] shadow-md">
                     <img class="h-[350px] absolute bottom-0  left-1"
-                        src="./images/handsome-businessman-suit-headphones-with-microphone-looking-camera-happy-positive-smiling-cheerfully-standing-white-background.png"
+                        src="../public/images/handsome-businessman-suit-headphones-with-microphone-looking-camera-happy-positive-smiling-cheerfully-standing-white-background.png"
                         alt="">
 
                 </div>
@@ -354,7 +345,7 @@
                 </div>
                 <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] md:h-[30%] w-full gap-3 p-4">
                     <div class="bg-cover  md:h-[50%] md:w-full bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-video"
-                        style='background-image: linear-gradient(0deg, rgba(64, 148, 188, 0.7) 0%,  rgba(64, 148, 188, 0.4) 100%, rgba(64, 148, 188, 1)100%, rgba(64, 148, 188, 1) 100%), url("./images/wef-Photoroom\ \(1\).png");'>
+                        style='background-image: linear-gradient(0deg, rgba(64, 148, 188, 0.7) 0%,  rgba(64, 148, 188, 0.4) 100%, rgba(64, 148, 188, 1)100%, rgba(64, 148, 188, 1) 100%), url("../public/images/wef-Photoroom\ \(1\).png");'>
 
                         <p class="text-white font-medium ">Si vous disposez du texte de votre annonce légale <br>
                             vous pouvez le saisir ou le "Copier-Coller"<br> librement.</p>
