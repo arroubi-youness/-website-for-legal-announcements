@@ -16,7 +16,7 @@
         }
     </style>
 </head>
-<?php session_start();  ?>
+<!-- <?php session_start();  ?> -->
 <body class="overflow-x-hidden w-full ">
     <div id="garde" class=" w-[100%]  h-[590px]   md:w-full md:h-screen  bg-no-repeat  mb-5  bg-slate-100  ">
 
@@ -65,12 +65,12 @@
             <?php
 
 
-if (isset($_SESSION['message'])) {
+<!-- if (isset($_SESSION['message'])) {
     echo '<div id="success-message" style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; width: 280px; position: fixed; top: 80px; right: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">' . $_SESSION['message'] . '</div>';
      unset($_SESSION['message']);
 }
 
-?>
+?> -->
 
             <div>
 
@@ -620,8 +620,7 @@ if (isset($_SESSION['message'])) {
 }, 2000);  
 </script>
 
-        // packs
-
+ 
 
     </script>
 </body>
