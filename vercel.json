@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1"          # Serve static assets (CSS, images) from the public folder
+      "dest": "/public/$1"           
     }
   ]
 }
