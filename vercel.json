@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.php",        
-      "use": "@vercel/php"            
+      "src": "api/**/*.php",        # Match all PHP files in the api folder
+      "use": "@vercel/php"          # Vercel's native PHP support
     },
     {
-      "src": "package.json",          
-      "use": "@vercel/node"
+      "src": "package.json",        # The Node.js part (React, frontend)
+      "use": "@vercel/node"         # Use Vercel's Node.js builder
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.php"         
+      "dest": "/api/$1.php"         # Route API calls to PHP files
     },
     {
       "src": "/(.*)",
-      "dest": "/public/$1"           
+      "dest": "/public/$1"          # Serve static assets (CSS, images) from the public folder
     }
   ]
 }
