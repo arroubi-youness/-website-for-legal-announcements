@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.php",        # Match all PHP files in the api folder
-      "use": "@vercel/php"          # Vercel's native PHP support
+      "src": "api/**/*.php",        
+      "use": "@vercel/php"          
     },
     {
-      "src": "package.json",        # The Node.js part (React, frontend)
-      "use": "@vercel/node"         # Use Vercel's Node.js builder
+      "src": "package.json",         
+      "use": "@vercel/node"          
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1.php"         # Route API calls to PHP files
+      "dest": "/api/$1.php"          
     },
     {
       "src": "/(.*)",
